@@ -10,21 +10,24 @@
 </head>
 <body>
     <Header id="header">
-        <p class="p p1"><a href="">HOME</a> </p>
-        <p class="p p2"><a href="">SHOW PICS</a> </p>
+        <p class="p p1"><a onclick="home()" >HOME</a> </p>
+        <p class="p p2"><a onclick="showme()" >SHOW PICS</a> </p>
         <p class="p3"><img id="LOG" src="./LOGO-removebg-preview.png" alt=""></p>
-        <p class="p p4"> <a href="">CONTACT</a></p>
-        <p class="p p5"> <a href="">ABOUT US</a></p>
+        <p class="p p4"> <a onclick="contact()">CONTACT</a></p>
+        <p class="p p5"> <a onclick="about()">ABOUT US</a></p>
 
     </Header>
     <div id="body">
         <div id="body1"><p id="CAKE" > CAKE & </p>
             <p id="COOKIES" >COOKIES</p>
-            <p id="text">Yes, classic chocolate chip cookies are fun
-                 to make, but there's a whole world of cookie
-                  options out there.The best place to start that
-                   adventure is with these cookie cookbooks that are
-                    easy to follow and fun to explore.</p>
+            <p id="text">One of the key factors of our success
+                has been to build a strong reputation
+               based on the quality of our lovingly
+                handmade cakes and patisserie, using
+                only the freshest ingredients and
+               traditional baking methods.
+               These are products that we are
+                incredibly proud of.</p>
                     <img id="cake1" src="./cake1.png">
                     <img id="cake2" src="./cake2.png">
                     <img id="cake3" src="./cake3.png">
@@ -63,19 +66,52 @@
 
     </div>
     <div id="page3">
-        <img class="slider" src="./tarte1.jpg" alt="">
-        <img class="slider" src="./TARE2.jpg" alt="">
-        <img class="slider" src="./tarte3.jpg" alt="">
-        <img class="slider" src="./tarte4.jpg" alt="">
-        <img class="slider" src="./tarte5.jpg" alt="">
-        <img class="slider" src="./tarte6.jpg" alt="">
-        <img class="slider" src="./tarte7.jpg" alt="">
+        <div class="slide1">
+        <img class="slider" src="./tarte1.jpg" >
+        <img class="slider" src="./TARE2.jpg" >
+        <img class="slider" src="./tarte3.jpg" >
+        <img class="slider" src="./tarte4.jpg">
+        <img class="slider" src="./tarte5.jpg" >
+        <img class="slider" src="./tarte6.jpg">
+        <img class="slider" src="./tarte7.jpg" >
         <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="button-rigth" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <p id="pies">CAKE</p>
+        <div id="slide2"> 
+            <img class="sliderW" src="./1.jpg" >
+        <img class="sliderW" src="./2.jpg" >
+        <img class="sliderW" src="./3.jpg" >
+        <button class="button-left2" onclick="plus(-1)">&#10094;</button>
+        <button class="button-rigth2" onclick="plus(1)">&#10095;</button>
+        </div>
+        <p id="pi">COOKIES</p>
     
-        
-        
+
     </div>
+    <div id="page4">
+        <div id="our">
+            <p id="story">OUR STORY</p>
+            <p id="ppp">One of the key factors of our success has been to build a strong reputation based on the quality of our lovingly handmade cakes and patisserie, using only the freshest ingredients and traditional baking methods. These are products that we are incredibly proud of. <br><br><br>
+
+
+                From stunning whole cakes, to delicate patisserie to our famous Afternoon Teas, we believe we have the perfect range of products to delight all of our loyal customers both old and new. <br><br><br>
+                
+                Our mission is to create memorable experiences and play a part in the journey of our customers lives. Our feeling is that our stunning collection should be accessible to everyone. So have a good look around and see all the amazing products we have to offer. 
+
+            </p>
+        </div>
+        <div id="foto">
+        </div>
+        <p id="petit">
+            AWAY MEXICO, TANGIER    
+        </p>
+        <img id="pnj" src="./PNJ.png" alt="">
+
+
+
+    </div>
+    
     
     
     <footer> 
