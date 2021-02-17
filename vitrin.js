@@ -36,28 +36,6 @@ function about(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var CAKE = document.getElementById("CAKE");
 setInterval(changecolor,100);
 function changecolor(){
@@ -76,6 +54,7 @@ function change(){
     COOKIES.style.color = "RGB("+r+","+g+","+b+")";
 }
 changecolor();
+change();
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -84,7 +63,7 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
-<<<<<<< HEAD
+
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slider");
@@ -113,9 +92,16 @@ function show(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+function myfonction(){
+  var navbar = document.getElementById("header");
+  navbar.classList.toggle("show");
+
+}
 
 
 
 
-=======
->>>>>>> c6d80051223b94769c25506a350c4705701ea522
+
+
+
+

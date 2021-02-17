@@ -15,9 +15,11 @@ box-sizing: border-box;}
 p>a{
       
         text-decoration: none;
-        color:black;
+        color:rgb(0, 0, 0);
         font-weight: lighter;
         font-size: 1.3vw;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
 
 }
 
@@ -60,7 +62,7 @@ p>a{
 }
 
 #body{
-    background-image: url(./Scroll\ Group\ 1.png);
+    background-image: url(image/Scroll\ Group\ 1.png);
     background-size:101vw 90vh;
     width: 98vw;
     height: 110vh;
@@ -69,12 +71,25 @@ p>a{
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(15,1fr);
     align-items: center;
-    justify-items: center;
-    
-    
-    
-
+    justify-items: center; 
 }
+#body,#page2,#page3,#page4{
+    animation: transitionIn 5s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform:perspective(-80deg);
+
+    }
+    to{
+        opacity: 1;
+        transform:perspective(0);
+
+    }
+}
+
 #body1{
     
     display: grid;
@@ -83,17 +98,17 @@ p>a{
     justify-items: center;
     align-items: center;
     width: 98vw;
-    height: 125vh;
+    height: 115vh;
 }
 #CAKE{
     grid-column: 8/10;
-    grid-row: 7/10;
+    grid-row: 8/11;
     font-size: 4vw;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 0.2vh;
 }
 #COOKIES{
     grid-column: 9/11;
-    grid-row: 9/11;
+    grid-row: 10/12;
     font-size: 4vw;
     font-size: 4vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -101,34 +116,34 @@ p>a{
 }
 #text{
     grid-column: 6/9;
-    grid-row: 7/14;
+    grid-row: 8/16;
     font-size: 1.3vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 4vh;
 }
 #cake2{
     grid-column: 6/10;
-    grid-row:11/16 ;
+    grid-row:13/18 ;
     width: 22vw;
     height: 23vh;
 
 }#cake1{
-    grid-column: 8/11;
-    grid-row:12/15 ;
+    grid-column: 9/12;
+    grid-row:14/16 ;
     width: 15vw;
     height: 34vh;
 
 }
 #cake3{
-    grid-column: 7/10;
-    grid-row:15/18;
+    grid-column: 7/11;
+    grid-row:17/19;
     width: 17vw;
     height: 35vh;
     
 }
 
 footer {
-    width: 98vw;
+    width: 99vw;
     height: 70px;
     background-color: black;
     display: grid;
@@ -138,8 +153,8 @@ footer {
     
 }
 .footer{
-    color: gray;
-    font-size: 1.3vw;
+    color: rgb(173, 173, 173);
+    font-size: 1.1vw;
    
     
 }
@@ -163,7 +178,7 @@ footer {
     grid-template-columns: repeat(11,1fr);
     grid-template-rows: repeat(10,1fr);
 height: 120vh;
-background-image: url(./BgRO.jpg);
+background-image: url(image/BgRO.jpg);
 background-size: cover;
 justify-items: center;
 
@@ -184,11 +199,12 @@ justify-items: center;
     grid-template-rows: repeat(10,1fr);
     background-color: rgba(0, 0, 0, 0.5);
     width: 50vw;
-    height: 100vh;
+    height: 93vh;
     grid-column: 3/11;
     grid-row: 2/4;
     border: 2px solid black;
     border-radius: 20px;
+    align-items: center;
     
 }
 .imput{
@@ -219,10 +235,15 @@ justify-items: center;
 
 
 .imput1{
-      grid-column: 4/10;
+      grid-column: 4/12;
       grid-row: 2;
-      color: white;
+      font-size: 26px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(255, 255, 255);;
       animation: text 3s 1;
+      text-shadow: 4px 5px rgba(0, 0, 0, 0.596);
+      letter-spacing: 3px;
+
      
   }
  
@@ -261,7 +282,7 @@ justify-items: center;
     grid-row: 9/10;
     color: white;
     border-radius: 5vw;
-    background-color: grey;
+    background-color: rgb(107, 75, 65, 1);
     width: 10vw;
     height: 5vh;
     outline: none;
@@ -290,55 +311,67 @@ background-image: cover;
 
 }
 /* page3 */
-<<<<<<< HEAD
 #page3{
     display: none;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
-    height: 70vh;
-    background-image: url(./background.jpg);
+    height: 78vh;
+    background-image: url(image/background2.jpg);
     background-size: cover;
     align-items: center;
     justify-items: center;
     
 }
-.slide1{
-    grid-column: 2/5;
+#slide1{
+    grid-column: 2/6;
     grid-row: 4/8;
+    
+    
 }
 .slider{
   
-    width: 100%;
+    width: 83%;
     height:40vh;
+    border-radius: 30px;
 }
 .button-left{
     position: absolute;
-    bottom: 50%;
-    left: 150px;
+    bottom: 45%;
+    left: 120px;
+    width: 20px;
+    height: 30px;
 
 }
 .button-rigth{
     position: absolute;
-    bottom: 50%;
-    left: 600px;
+    bottom: 45%;
+    left: 660px;
+    width: 20px;
+    height: 30px;
 }
 #slide2{
     grid-column: 7/10;
     grid-row: 4/8;
+    
 }
 .sliderW{
     width: 100%;
     height:40vh;
+    border-radius: 30px;
 
 }
 .button-left2{position: absolute;
-    bottom: 50%;
-    right: 605px;
+    bottom: 45%;
+    right: 655px;
+    width: 20px;
+    height: 30px;
 }
 .button-rigth2{
     position: absolute;
-    bottom: 50%;
-    right: 140px;
+    bottom: 45%;
+    right: 120px;
+    width: 20px;
+    height: 30px;
    
 }
 #pies{
@@ -346,19 +379,20 @@ background-image: cover;
     grid-row: 9/10;
     color: black;
     font-size: 45px;
-    font-family: unset;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation: text 3s 1;
+
 }
 #pi{
     grid-column: 8/9;
     grid-row: 9/10;
     color: black;
     font-size: 45px;
-    font-family: unset;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation: text 3s 1;
 }
 #page4{
-    background-image: url(./background2.jpg);
+    background-image: url(image/background2.jpg);
     background-size: 100% 100vh;
     display: none;
     grid-template-columns: repeat(10,1fr);
@@ -401,7 +435,7 @@ background-image: cover;
     grid-row: 3/7;
     width: 40vw;
     height: 50vh;
-    background-image: url(./foto.jpg);
+    background-image: url(image/foto.jpg);
     background-size: 40vw 50vh;
     background-position: center;
     border-radius: 35px;
@@ -438,11 +472,11 @@ background-image: cover;
 
     
 
-=======
+
 .body{
     font-family: tahoma;
     overflow-x:hidden ;
-    background-image: url(./tarte1.jpg);
+    background-image: url(image/tarte1.jpg);
     
 
 }
@@ -519,4 +553,4 @@ background-image: cover;
     height: 100%;
     background-position: center;
 }
->>>>>>> c6d80051223b94769c25506a350c4705701ea522
+
